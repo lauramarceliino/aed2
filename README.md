@@ -40,7 +40,7 @@ O estudo busca compreender as relações entre bolsistas, orientadores e unidade
 
 A base de dados utilizada neste projeto está disponível em:
 
-- [Portal de Dados da UFRN - Bolsistas de Iniciação Cientifica](https://dados.ufrn.br/dataset/bolsistas-de-iniciacao-cientifica/resource/dfee756f-809f-42d2-a88a-db67f3a040bf)  
+- [Portal de Dados da UFRN - Bolsistas de Iniciação Científica](https://dados.ufrn.br/dataset/bolsistas-de-iniciacao-cientifica/resource/dfee756f-809f-42d2-a88a-db67f3a040bf)  
 
 ## 🚀 Execução no Google Colab
 
