@@ -52,6 +52,6 @@ As células já estão executadas mas caso seja necessário reproduzi-las, no am
 
 ## 📊 Apresentação
 
-Você pode acessar a apresentação do projeto no Canva através do link abaixo:
+A apresentação do projeto pode ser acessada clicando no link abaixo:
 
-[Ver apresentação no Canva]([https://www.canva.com/seu-link-da-apresentacao](https://www.canva.com/design/DAGzJpx-3dM/FZRI1eylc88T51enXIlYNw/view?utm_content=DAGzJpx-3dM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b17d40bb4))
+[Ver apresentação no Canva](https://www.canva.com/design/DAGzJpx-3dM/FZRI1eylc88T51enXIlYNw/view)
