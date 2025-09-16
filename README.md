@@ -1,4 +1,4 @@
-# 🚀 Projeto referen a primeira unidade da displina ALGORITMOS E ESTRUTURAS DE DADOS II
+# 🚀 Projeto referente a primeira unidade - ALGORITMOS E ESTRUTURAS DE DADOS II
 
 # 📊 Análise de Grafos - Bolsistas de Iniciação Científica
 
