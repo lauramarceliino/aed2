@@ -49,6 +49,7 @@ Você pode executar este projeto diretamente no Google Colab:
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17jCUpUeRU39X984-LHdd6e9mJluYWDVe)
 
 As células já estão executadas mas caso seja necessário reproduzi-las, no ambiente google colab, baixe o arquivo `bolsistas-iniciacao-cientificia.csv` da pasta`u1/data` e suba na opção *Files* em seguida clique em *Upload session storage*, após fazer isso execute as células, em ordem, normalmente.
+
 ## 🔗 Apresentação
 
- [Link para apresentação no site do canva]([https://dados.ufrn.br/dataset/bolsistas-de-iniciacao-cientifica/resource/dfee756f-809f-42d2-a88a-db67f3a040bf](https://www.canva.com/design/DAGzJpx-3dM/FZRI1eylc88T51enXIlYNw/view?utm_content=DAGzJpx-3dM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b17d40bb4)) 
+- [Apresentação no canva]([https://dados.ufrn.br/dataset/bolsistas-de-iniciacao-cientifica/resource/dfee756f-809f-42d2-a88a-db67f3a040bf](https://www.canva.com/design/DAGzJpx-3dM/FZRI1eylc88T51enXIlYNw/view?utm_content=DAGzJpx-3dM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b17d40bb4))  
