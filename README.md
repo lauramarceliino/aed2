@@ -99,7 +99,7 @@ O experimento é projetado para garantir robustez estatística e reprodutibilida
 #### Parâmetros
 
 * **Tamanhos de Grafo ($V$):** `[100, 500, 1.000, 5.000, 10.000, 50.000, 100.000]` (Ajuste a lista `TAMANHOS` conforme a capacidade do seu ambiente).
-* **Probabilidade de Aresta ($p$):** $0.01$ (Mantendo o grafo **esparso** para favorecer a complexidade $O((V+E) \log V)$ do Min-Heap).
+* **Probabilidade de Aresta ($p$): A probabilidade de arestas é ajustada dinamicamente de acordo com o tamanho do grafo usando a função edge_prob_ideal, baseada em log(N)/N.
 * **Repetições por Tamanho:** 15 a 20 repetições.
 * **Nós Fonte por Repetição:** 5 nós aleatórios.
 * **Reprodutibilidade:** Sementes (`SEED`) fixadas para `random` e `numpy`.
