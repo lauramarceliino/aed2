@@ -88,7 +88,7 @@ O projeto é executado em um ambiente Python e depende das seguintes bibliotecas
 | **`codecarbon`** | Medição da pegada de carbono (kg CO</sub>₂e) de cada execução do algoritmo. |
 | **`scipy.stats`** | Cálculo dos Intervalos de Confiança (distribuição *t* de Student). |
 
-As implementações de Dijkstra (Clássico e Min-Heap) são carregadas de notebooks externos (`dijsktra.ipynb` e `dijsktra_min_heap.ipynb`).
+As implementações de Dijkstra (Clássico e Min-Heap) são carregadas de notebooks externos (`dijsktra.ipynb` e `dijsktra_min_heap.ipynb`, presentes na pasta `u2/p1/algoritmos`).
 
 #
 
