@@ -154,7 +154,7 @@ Você pode vizualizar este projeto diretamente no Google Colab:
 
 #### 🎥 Apresentação / Vídeo
 
-O projeto também conta com um vídeo explicativo (até 10 minutos), mostrando:  
+O projeto também conta com um vídeo explicativo mostrando:  
 
 - Algoritmos e diferenças de complexidade  
 - Execução dos notebooks  
