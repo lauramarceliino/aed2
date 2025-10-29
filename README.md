@@ -160,7 +160,7 @@ O projeto também conta com um vídeo explicativo mostrando:
 - Execução dos notebooks  
 - Gráficos e análise de resultados  
 
-[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](LINK_DO_VIDEO)
+[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/C1ZmsysT5EQ)
 
 #### 📊 Referências
 
