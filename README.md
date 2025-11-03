@@ -65,7 +65,7 @@ A apresentação do projeto pode ser acessada clicando no link abaixo:
 
 ## 🚀 Projeto referente segunda unidade
 
-### 📊 PARTE 1 - Comparação de Performance: Dijkstra Clássico vs Dijkstra com Min-Heap
+### 📊 TRABALHO 1 - Comparação de Performance: Dijkstra Clássico vs Dijkstra com Min-Heap
 
 #### 🚀 Visão Geral do Projeto
 
@@ -165,4 +165,8 @@ O projeto também conta com um vídeo explicativo mostrando:
 #### 📊 Referências
 
 - [NetworkX Documentation](https://networkx.org/documentation/stable/)  
-- [CodeCarbon](https://codecarbon.io)  
+- [CodeCarbon](https://codecarbon.io)
+
+#
+
+### 📊 TRABALHO 2 - A* + MST
