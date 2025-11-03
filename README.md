@@ -273,7 +273,7 @@ A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8
 
 #
 
-#### 📊Análise Crítica
+#### 📊 Análise Crítica
 
 Este projeto estimou o comprimento mínimo de malha viária necessário para interligar museus em oito cidades globais. A metodologia combinou a busca A* (para distâncias reais) com uma Árvore Geradora Mínima (MST) para otimizar a conexão total.
 
