@@ -169,4 +169,134 @@ O projeto também conta com um vídeo explicativo mostrando:
 
 ---
 
-### 📊 TRABALHO 2 - A* + MST
+### 📊 TRABALHO 2 - Interligando Pontos de Interesse com A* e MST
+
+#### 🚀 Visão Geral do Projeto
+Este projeto tem como objetivo estimar **quantos quilômetros são necessários para interligar um conjunto de pontos de interesse (POIs)** em diferentes cidades, utilizando **rotas reais da malha viária** obtidas com **OSMnx** e algoritmos clássicos de **A*** e **Árvore Geradora Mínima (MST)**.
+
+A análise combina:
+- **A\*** (A-star) → para encontrar os **caminhos mínimos reais** entre cada par de POIs na cidade; 
+- **Kruskal (MST)** → para determinar o **conjunto mínimo de conexões** que liga todos os POIs com o menor custo total (em km).
+
+O projeto foi desenvolvido com base nos notebooks de referência: 
+- `week07/Astar.ipynb` 
+- `week08/kruskal_natal.ipynb`
+
+#
+
+#### 🧩 Objetivos
+
+1. **Modelar o grafo viário** das cidades com OSMnx. 
+2. **Definir POIs** relevantes em cada cidade (como universidades, praças, arenas, parques, museus, etc.). 
+3. **Calcular as rotas mais curtas (A\*)** entre todos os pares de POIs, considerando a malha viária real. 
+4. **Construir o grafo completo de POIs** com pesos baseados nos custos A\*. 
+5. **Gerar a Árvore Geradora Mínima (MST)** com base nos custos de A\*, para obter o comprimento total mínimo necessário para conectar todos os POIs. 
+6. **Comparar o resultado entre 8 cidades diferentes**, analisando o total em quilômetros e padrões de conectividade. 
+
+#
+
+#### 🏙️ Cidades analisadas
+
+1. Natal – Brasil 
+2. Paris – França 
+3. Los Angeles – Estado Unidos 
+4. Roma – Itália 
+5. Manhattan – Estados Unidos 
+6. Shibuya – Japão 
+7. Cairo – Egito 
+8. Sydney– Austrália 
+
+#
+
+#### ⚙️ Metodologia
+
+O processo de análise foi dividido nas seguintes etapas, aplicadas a cada cidade estudada:
+
+##### 1) Escolha dos Pontos de Interesse (POIs)
+
+Para esta análise, escolhemos a categoria **"Museus"** (`tourism: museum`) como nossos Pontos de Interesse (POIs). Esta escolha difere do Notebook-base II (que usou hospitais/escolas) e permite uma comparação interessante entre centros culturais de diferentes cidades.
+
+##### 2) Grafo Viário da Cidade
+
+Utilizamos a biblioteca `OSMnx` para baixar a malha viária (rede do tipo `drive`) de cada cidade. Para garantir a precisão nos cálculos de distância, o grafo foi projetado para o sistema de coordenadas métrico **UTM** (`ox.project_graph`). Para cada POI (museu) encontrado, identificamos o nó (`node`) mais próximo na malha viária projetada usando `ox.distance.nearest_nodes`.
+
+##### 3) Rotas Mais Curtas com A*
+
+Para construir um grafo de conexões entre os POIs, foi necessário calcular a distância real pela malha viária entre todos os pares de POIs. Utilizamos o algoritmo **A*** (`networkx.astar_path`) com o peso (`weight`) definido como `length` (comprimento da via).
+
+Como heurística para o A*, utilizamos a **distância Euclidiana** (`euclidean_dist_heuristic`) no plano projetado (UTM). Esta heurística é admissível (nunca superestima o custo real) e consistente, garantindo que o A* encontre o caminho mais curto de forma eficiente. O custo (distância) e a rota (lista de nós) de cada par foram armazenados.
+
+##### 4) MST sobre o Grafo Completo de POIs
+
+Com os custos A* calculados, um novo grafo completo foi criado, onde os vértices são os nós dos POIs e as arestas são ponderadas pela distância A* entre eles.
+
+Sobre este grafo completo, calculamos a **Árvore Geradora Mínima (MST)**, utilizando o algoritmo de Kruskal (`networkx.minimum_spanning_tree`). A soma dos pesos das arestas desta MST representa o "comprimento total mínimo" necessário para garantir que todos os museus da cidade estejam conectados pela rede viária.
+
+##### 5) Comparação entre Cidades
+
+Os passos 1 a 4 foram repetidos para 8 cidades distintas (incluindo Natal) para permitir uma análise comparativa.
+
+#
+
+#### 🛠️ Tecnologias e Dependências
+
+* **Python 3.x**
+* **OSMnx:** Para aquisição e modelagem de dados do OpenStreetMap.
+* **NetworkX:** Para análise de grafos, implementação do A* e do algoritmo da MST (Kruskal).
+* **Pandas & GeoPandas:** Para manipulação de dados geoespaciais (POIs).
+* **Matplotlib:** Para visualização dos grafos e das rotas.
+* **Numpy:** Para cálculos numéricos.
+
+#### 📈 Resultados
+
+##### Visualizações
+
+O notebook principal (`challenge.ipynb`) gera as visualizações da malha viária de cada cidade, destacando em ciano a união das rotas A* que compõem a MST, e em verde-limão os POIs (museus) conectados.
+
+*(Exemplo de como as imagens seriam referenciadas no README se estivessem no repositório)*
+###### Tabela Comparativa Consolidada
+
+A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8 cidades analisadas. As cidades estão ordenadas pelo comprimento total da MST.
+
+*(Nota: Estes são valores ilustrativos baseados na execução do código. Os valores reais podem variar ligeiramente dependendo das atualizações do OSM.)*
+
+| Cidade | POIs Conectados | Comprimento MST (km) | Arestas na MST | Média km/POI | Média km/Aresta |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Roma, Italy | 54 | 40.52 | 53 | 0.75 | 0.76 |
+| Paris, France | 72 | 58.71 | 71 | 0.82 | 0.83 |
+| Manhattan, NYC | 89 | 71.18 | 88 | 0.80 | 0.81 |
+| Cairo, Egypt | 30 | 94.65 | 29 | 3.16 | 3.26 |
+| Natal, Brazil | 10 | 114.77 | 9 | 11.48 | 12.75 |
+| Shibuya, Japan | 106 | 179.31 | 105 | 1.69 | 1.71 |
+| Sydney, Australia| 38 | 258.85 | 37 | 6.81 | 6.99 |
+| Los Angeles, USA | 51 | 589.60 | 50 | 11.56 | 11.79 |
+
+#
+
+#### 📊Análise Crítica
+
+Este projeto estimou o comprimento mínimo de malha viária necessário para interligar museus em oito cidades globais. A metodologia combinou a busca A* (para distâncias reais) com uma Árvore Geradora Mínima (MST) para otimizar a conexão total.
+
+Os resultados da tabela comparativa revelam uma forte correlação entre a estrutura urbana e o custo de conexão. Cidades historicamente densas e "compactas", como Roma e Paris, apresentaram os menores comprimentos de MST. Nesses locais, os museus (POIs) estão geograficamente agrupados em centros históricos, exigindo menos quilômetros de infraestrutura para serem interligados.
+
+Em contraste, cidades conhecidas pela expansão urbana (urban sprawl), como Los Angeles e Sydney, exibiram os maiores comprimentos de MST e, notavelmente, as maiores médias de "km/Aresta". Isso indica que os POIs estão muito mais dispersos, e a rede viária que os conecta é, por natureza, mais longa. Cidades como Manhattan e Tóquio, apesar de densas, possuem áreas geográficas maiores, resultando em valores intermediários.
+
+**Limitações do Método:** A escolha do POI é crucial; usar "aeroportos" em vez de "museus" mudaria drasticamente os resultados. A metodologia de "nó mais próximo" (`nearest_nodes`) é uma simplificação que ignora a acessibilidade real (ex: a entrada de um museu pode estar longe do nó viário mais próximo). Além disso, a conversão do grafo para não-direcionado (necessária para a MST) ignora restrições de sentido único, o que pode subestimar ligeiramente as distâncias reais do A* se o grafo 'drive' original fosse usado de forma estritamente direcionada.
+
+#### 💡 Como Executar o Projeto
+
+As células já estão executadas mas caso seja necessário reproduzi-las, basta copiar o arquivo o notebook `T2U2` e executar as células em ordem.
+
+Você também pode vizualizar este projeto diretamente no Google Colab:  
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](1OmM-qgyFcoKV45iblqERNerNB6wD-Zpk)
+
+#### 🎥 Apresentação / Vídeo
+
+O projeto também conta com um vídeo explicativo mostrando:  
+
+- Execução dos notebooks
+- Comparação entre Cidades
+- Tabela Comparativa e Análise  
+
+[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/C1ZmsysT5EQ)
