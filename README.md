@@ -167,6 +167,6 @@ O projeto também conta com um vídeo explicativo mostrando:
 - [NetworkX Documentation](https://networkx.org/documentation/stable/)  
 - [CodeCarbon](https://codecarbon.io)
 
-#
+---
 
 ### 📊 TRABALHO 2 - A* + MST
