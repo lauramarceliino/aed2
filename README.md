@@ -271,6 +271,13 @@ A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8
 | Cairo, Egypt | 32 | 83.77 | 31 | 2.62 | 2.70 |
 | Sydney, Australia| 93 | 448.10 | 92 | 4.82 | 4.87 |
 
+| Métrica                   | Valor (km) |
+| :------------------------ | ---------: |
+| Média (km/POI)            |   **1.91** |
+| Desvio Padrão (km/POI)    |   **1.42** |
+| Média (km/Aresta)         |   **1.96** |
+| Desvio Padrão (km/Aresta) |   **1.44** |
+
 #
 
 #### 📊 Análise Crítica
