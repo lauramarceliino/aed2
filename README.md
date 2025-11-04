@@ -251,14 +251,11 @@ Os passos 1 a 4 foram repetidos para 8 cidades distintas (incluindo Natal) para 
 
 ##### Visualizações
 
-O notebook principal (`challenge.ipynb`) gera as visualizações da malha viária de cada cidade, destacando em ciano a união das rotas A* que compõem a MST, e em verde-limão os POIs (museus) conectados.
+O notebook principal (`challenge.ipynb`) gera as visualizações da malha viária de cada cidade, destacando em vermelho a união das rotas A* que compõem a MST, e em verde-limão os POIs (museus) conectados.
 
-*(Exemplo de como as imagens seriam referenciadas no README se estivessem no repositório)*
 ###### Tabela Comparativa Consolidada
 
 A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8 cidades analisadas. As cidades estão ordenadas pelo comprimento total da MST.
-
-*(Nota: Estes são valores ilustrativos baseados na execução do código. Os valores reais podem variar ligeiramente dependendo das atualizações do OSM.)*
 
 | Cidade | POIs Conectados | Comprimento MST (km) | Arestas na MST | Média km/POI | Média km/Aresta |
 | :--- | ---: | ---: | ---: | ---: | ---: |
@@ -270,6 +267,8 @@ A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8
 | Osaka, Japan | 48 | 63.64 | 47 | 1.33 | 1.35 |
 | Cairo, Egypt | 32 | 83.77 | 31 | 2.62 | 2.70 |
 | Sydney, Australia| 93 | 448.10 | 92 | 4.82 | 4.87 |
+
+###### Estatísticas Gerais
 
 | Métrica                   | Valor (km) |
 | :------------------------ | ---------: |
