@@ -179,8 +179,8 @@ A análise combina:
 - **Kruskal (MST)** → para determinar o **conjunto mínimo de conexões** que liga todos os POIs com o menor custo total (em km).
 
 O projeto foi desenvolvido com base nos notebooks de referência: 
-- `week07/Astar.ipynb` 
-- `week08/kruskal_natal.ipynb`
+- `u2/d2/algoritmos de referencia/Astar.ipynb` 
+- `u2/d2/algoritmos de referencia/kruskal_natal.ipynb`
 
 #
 
@@ -252,6 +252,14 @@ Os passos 1 a 4 foram repetidos para 8 cidades distintas (incluindo Natal) para 
 ##### Visualizações
 
 O notebook principal (`challenge.ipynb`) gera as visualizações da malha viária de cada cidade, destacando em vermelho a união das rotas A* que compõem a MST, e em verde-limão os POIs (museus) conectados.
+![MST de Natal](u2/d2/imagens/Natal.png)
+![MST de Natal](u2/d2/imagens/Paris.png)
+![MST de Natal](u2/d2/imagens/LosAngeles.png)
+![MST de Natal](u2/d2/imagens/Rome.png)
+![MST de Natal](u2/d2/imagens/Manhattan.png)
+![MST de Natal](u2/d2/imagens/Osaka.png)
+![MST de Natal](u2/d2/imagens/Cairo.png)
+![MST de Natal](u2/d2/imagens/Sydney.png)
 
 ###### Tabela Comparativa Consolidada
 
