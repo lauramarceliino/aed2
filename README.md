@@ -262,14 +262,14 @@ A tabela a seguir consolida as métricas obtidas para a categoria "Museus" nas 8
 
 | Cidade | POIs Conectados | Comprimento MST (km) | Arestas na MST | Média km/POI | Média km/Aresta |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Roma, Italy | 54 | 40.52 | 53 | 0.75 | 0.76 |
-| Paris, France | 72 | 58.71 | 71 | 0.82 | 0.83 |
-| Manhattan, NYC | 89 | 71.18 | 88 | 0.80 | 0.81 |
-| Cairo, Egypt | 30 | 94.65 | 29 | 3.16 | 3.26 |
-| Natal, Brazil | 10 | 114.77 | 9 | 11.48 | 12.75 |
-| Shibuya, Japan | 106 | 179.31 | 105 | 1.69 | 1.71 |
-| Sydney, Australia| 38 | 258.85 | 37 | 6.81 | 6.99 |
-| Los Angeles, USA | 51 | 589.60 | 50 | 11.56 | 11.79 |
+| Natal, Brazil | 13 | 19.63 | 12 | 1.51 | 1.64 |
+| Paris, France | 135 | 77.36 | 134 | 0.57 | 0.58 |
+| Los Angeles, USA | 88 | 240.13 | 87 | 2.73 | 2.76 |
+| Roma, Italy | 131 | 143.23 | 130 | 1.09 | 1.10 |
+| Manhattan, NYC | 83 | 53.83 | 82 | 0.65 | 0.66 |
+| Osaka, Japan | 48 | 63.64 | 47 | 1.33 | 1.35 |
+| Cairo, Egypt | 32 | 83.77 | 31 | 2.62 | 2.70 |
+| Sydney, Australia| 93 | 448.10 | 92 | 4.82 | 4.87 |
 
 #
 
