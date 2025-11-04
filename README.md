@@ -285,11 +285,11 @@ Em contraste, cidades conhecidas pela expansão urbana (urban sprawl), como Los 
 
 #### 💡 Como Executar o Projeto
 
-As células já estão executadas mas caso seja necessário reproduzi-las, basta copiar o arquivo o notebook `T2U2` e executar as células em ordem.
+As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o arquivo o notebook `T2U2` e executar as células em ordem.
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](1OmM-qgyFcoKV45iblqERNerNB6wD-Zpk)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](1HNMRRcxwLa9ATS3X9C-j8s8U85B0VFQz)
 
 #### 🎥 Apresentação / Vídeo
 
