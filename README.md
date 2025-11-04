@@ -150,7 +150,7 @@ Os gráficos (com eixos logarítmicos) demonstram a relação entre o tamanho do
 
 Você pode vizualizar este projeto diretamente no Google Colab:  
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](1OmM-qgyFcoKV45iblqERNerNB6wD-Zpk)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OmM-qgyFcoKV45iblqERNerNB6wD-Zpk?usp=drive_link)
 
 #### 🎥 Apresentação / Vídeo
 
@@ -289,7 +289,7 @@ As células já estão executadas mas caso seja necessário reproduzi-las, basta
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](1HNMRRcxwLa9ATS3X9C-j8s8U85B0VFQz)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HNMRRcxwLa9ATS3X9C-j8s8U85B0VFQz?usp=sharing)
 
 #### 🎥 Apresentação / Vídeo
 
