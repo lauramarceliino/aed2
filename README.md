@@ -202,7 +202,7 @@ O projeto foi desenvolvido com base nos notebooks de referência:
 3. Los Angeles – Estado Unidos 
 4. Roma – Itália 
 5. Manhattan – Estados Unidos 
-6. Shibuya – Japão 
+6. Osaka – Japão 
 7. Cairo – Egito 
 8. Sydney– Austrália 
 
