@@ -169,7 +169,7 @@ O projeto também conta com um vídeo explicativo mostrando:
 
 ---
 
-### 📊 TRABALHO 2 - Interligando Pontos de Interesse com A* e MST
+### 📊 TRABALHO 2 - Interligando Pontos de Interesse(POIs) com A* e MST
 
 #### 🚀 Visão Geral do Projeto
 Este projeto tem como objetivo estimar **quantos quilômetros são necessários para interligar um conjunto de pontos de interesse (POIs)** em diferentes cidades, utilizando **rotas reais da malha viária** obtidas com **OSMnx** e algoritmos clássicos de **A*** e **Árvore Geradora Mínima (MST)**.
