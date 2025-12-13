@@ -501,7 +501,13 @@ A decomposição k-core permitiu identificar o núcleo da rede, composto por nó
 #### Requisito 03
 - Visualização por **comunidades**
 - Cores associadas às comunidades detectadas
-- Tamanho do vértice definido por uma métrica de livre escolha  
+- Tamanho do vértice definido por uma métrica de livre escolha
+
+![Métrica Gephil](u3/imagens/requisito3.png)
+
+A detecção de comunidades foi realizada utilizando o algoritmo de modularidade. As cores representam diferentes comunidades estruturais da rede, enquanto o tamanho dos vértices reflete sua importância medida pelo PageRank. Após otimização a rede ficou da seguinte maneira:
+
+![Métrica Gephil](u3/imagens/requisito3-1.png)
 
 #
 
