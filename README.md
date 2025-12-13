@@ -441,7 +441,7 @@ Você também pode vizualizar este projeto diretamente no Google Colab:
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pwNhR_Y-SQUDJvp_nqxfFB32bEePyDeD?usp=sharing)
 
-Importando o HTML do gephi o deploy foi feito no github e está pode ser acessado clicando aqui 👉   [![Webpage – Open here](https://img.shields.io/badge/webpage-open%20here-green)]([https://ivanovitchm.github.io/netdeploy/network](https://lauramarceliino.github.io/deployprojeto/network))
+Importando o HTML do gephi o deploy foi feito no github e pode ser acessado clicando aqui 👉  [![Webpage – Open here](https://img.shields.io/badge/webpage-open%20here-green)]([https://ivanovitchm.github.io/netdeploy/network](https://lauramarceliino.github.io/deployprojeto/network))
 
 #
 
