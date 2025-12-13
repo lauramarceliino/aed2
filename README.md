@@ -494,7 +494,9 @@ O layout ForceAtlas2 foi utilizado por permitir uma visualização clara da sepa
 
 ![Métrica Gephil](u3/imagens/requisito2.png)
 
-A decomposição k-core permitiu identificar o núcleo da rede, composto por nós altamente interconectados. Observa-se que os vértices pertencentes aos maiores k-cores concentram os principais hubs da rede, indicando maior robustez estrutural.
+A decomposição k-core permitiu identificar o núcleo da rede, composto por nós altamente interconectados. Observa-se que os vértices pertencentes aos maiores k-cores concentram os principais hubs da rede, indicando maior robustez estrutural. Após aplicação de filtros, adicionar os labels e otimizar a posição dos nós afim de melhorar a visualização a rede ficou assim:
+
+![Métrica Gephil](u3/imagens/requisito2-1-1.png)
 
 #### Requisito 03
 - Visualização por **comunidades**
