@@ -299,7 +299,7 @@ Em contraste, cidades conhecidas pela expansão urbana (urban sprawl), como Los 
 
 #### 💡 Como Executar o Projeto
 
-As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `T2U2` e executar as células em ordem.
+As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `t3` e executar as células em ordem.
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
@@ -309,8 +309,8 @@ Você também pode vizualizar este projeto diretamente no Google Colab:
 
 O projeto também conta com um vídeo explicativo mostrando:  
 
-- Execução dos notebooks
-- Comparação entre Cidades
-- Tabela Comparativa e Análise  
+- Explicação do código
+- Execução da célula principal
+- Deploy da rede
 
 [![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/p_VG5x17LWs)
