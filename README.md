@@ -405,11 +405,60 @@ A seguir estarão disponíveis imagens das métricas que foram calculadas usando
 
 **Betweenness Centrality Distribution**
 
-![Métrica Gephil](u3/imagens/outdegree-distribution.png)
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143147.png)
 
 - Distribuição do grau de saída (número de arestas que saem do nó). O gráfico mostra uma distribuição mais plana e muito baixa em comparação com o in-degree, com a maioria dos nós tendo um out-degree baixo (próximo de zero). A contagem não ultrapassa 1.000 para a maioria dos valores de grau, o que sugere que a maioria dos nós aponta para poucas outras entidades.
 
+**Closeness Centrality Distribution**
 
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143209.png)
+
+- Distribuição da Centralidade de Proximidade. O gráfico está altamente concentrado em valores muito baixos (próximos de zero), indicando que a grande maioria dos nós está longe do centro da rede.
+
+**Harmonic Closeness Centrality Distributionn**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143238.png)
+
+- Distribuição da Centralidade de Proximidade Harmônica. Esta métrica é uma variação da Centralidade de Proximidade, especialmente útil para grafos desconexos ou dirigidos (como é o caso desta rede). O gráfico mostra uma concentração extremamente alta de nós em valores muito baixos (próximos de zero), indicando que a grande maioria dos nós tem baixa proximidade harmônica, sugerindo que o custo de alcançar outros nós é alto para a maioria das entidades na rede.
+
+**Eccentricity Distribution**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143255.png)
+
+- Distribuição da Excentricidade. A excentricidade de um nó é a maior distância geodésica (caminho mais curto) entre ele e qualquer outro nó na rede. Assim como outras métricas de centralidade, este gráfico está massivamente concentrado em valores muito baixos (próximos de zero). Isso é incomum, pois sugere que o "nó mais distante" para a maioria dos nós está a uma distância muito curta. No entanto, em redes desconectadas (muitos SCCs), os valores são frequentemente definidos como zero ou muito baixos/altos, dependendo da implementação, o que reforça a natureza esparsa e segmentada da rede.
+
+
+**Hubs Distribution**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143337.png)
+
+- Distribuição do escore de Hub (métrica HITS). O gráfico mostra uma concentração massiva de nós com escore de Hub próximo de zero, indicando que a grande maioria dos nós não serve como um índice ou agregador que aponta para muitas Autoridades.
+
+**Authority Distribution**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143354.png)
+
+- Distribuição do escore de Autoridade (métrica HITS). O gráfico mostra uma concentração muito forte de nós com escore de Autoridade próximo de zero. Isso sugere que apenas um número muito pequeno de nós atua como fontes importantes de conteúdo/informação (Authorities).
+
+**PageRank Distribution**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143425.png)
+
+- Distribuição do escore de PageRank. O gráfico mostra uma concentração muito forte de nós com escore de PageRank próximo de zero, com picos de contagem acima de 1.500. Isso sugere que a maior parte da "importância" ou "popularidade" da rede está concentrada em poucos nós.
+
+
+**Connected Components Reportn**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143509.png)
+
+- Relatório sobre a conectividade do grafo. Indica que a rede tem apenas 1 Componente Fracamente Conectado (WCC), sugerindo que o grafo é globalmente conexo quando a direção das arestas é ignorada. No entanto, há 57.034 Componentes Fortemente Conectados (SCC), o que significa que a maioria dos nós está isolada ou em pequenos ciclos quando a direção das arestas é considerada. O gráfico de distribuição de tamanho mostra um pico grande (quase toda a rede) para o WCC, mas a escala de x está em torno de 58.057 nós.
+
+**Modularity**
+
+![Métrica Gephil](u3/imagens/Capturadetela2025-12-13143545.png)
+
+- Relatório da métrica de modularidade para detecção de comunidades. O resultado é uma Modularidade de 0.697, que é um valor alto (próximo de 1), indicando que a rede tem uma estrutura comunitária muito forte com conexões densas dentro das comunidades e conexões esparsas entre elas. Foram identificadas 18 Comunidades. O gráfico mostra a distribuição do tamanho dessas comunidades.
+  
 #
 
 ### 🧩 Detecção de Comunidades
