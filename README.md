@@ -386,16 +386,25 @@ Essas métricas permitem identificar:
 A seguir estarão disponíveis imagens das métricas que foram calculadas usando o Gephi:
 
 **Degree Distribution**
+
 ![Métrica Gephil](u3/imagens/degree-distribution.png)
 
 - Distribuição do grau total (in-degree + out-degree) dos nós. O gráfico mostra uma forte concentração de nós com grau muito baixo (próximo de zero), com um pico de contagem acima de 22.000, sugerindo uma rede esparsa ou desigual onde a maioria dos nós tem poucas conexões.
 
 **In-Degree Distribution**
+
 ![Métrica Gephil](u3/imagens/indegree-distribution.png)
 
 - Distribuição do grau de entrada (número de arestas apontando para o nó). O gráfico é altamente concentrado em valores baixos, com um pico de contagem em torno de 10.000 para nós com in-degree próximo de zero. Isso sugere que a maioria dos nós recebe poucas conexões.
 
 **Out-Degree Distribution**
+
+![Métrica Gephil](u3/imagens/outdegree-distribution.png)
+
+- Distribuição do grau de saída (número de arestas que saem do nó). O gráfico mostra uma distribuição mais plana e muito baixa em comparação com o in-degree, com a maioria dos nós tendo um out-degree baixo (próximo de zero). A contagem não ultrapassa 1.000 para a maioria dos valores de grau, o que sugere que a maioria dos nós aponta para poucas outras entidades.
+
+**Betweenness Centrality Distribution**
+
 ![Métrica Gephil](u3/imagens/outdegree-distribution.png)
 
 - Distribuição do grau de saída (número de arestas que saem do nó). O gráfico mostra uma distribuição mais plana e muito baixa em comparação com o in-degree, com a maioria dos nós tendo um out-degree baixo (próximo de zero). A contagem não ultrapassa 1.000 para a maioria dos valores de grau, o que sugere que a maioria dos nós aponta para poucas outras entidades.
