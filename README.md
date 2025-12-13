@@ -480,11 +480,19 @@ Após a limpeza dos identificadores, surgem comunidades temáticas coerentes, ta
   (Closeness, Betweenness ou Eigenvector)
 - Layouts sugeridos:
   - **ForceAtlas2**
+ 
+![Métrica Gephil](u3/imagens/requisito1.png)
+ 
+O layout ForceAtlas2 foi utilizado por permitir uma visualização clara da separação estrutural da rede. O tamanho dos vértices é proporcional ao grau, refletindo o número de conexões, enquanto as cores representam a centralidade de betweenness, evidenciando nós com papel de intermediação entre comunidades. Nós com maior betweenness aparecem em tons mais quentes, indicando maior importância como intermediários entre comunidades.
     
 #### Requisito 02
 - Destaque para **k-core / k-shell**
 - Vértices com tamanho proporcional ao grau
 - Visualização da estrutura interna da rede
+
+![Métrica Gephil](u3/imagens/requisito2.png)
+
+A decomposição k-core permitiu identificar o núcleo da rede, composto por nós altamente interconectados. Observa-se que os vértices pertencentes aos maiores k-cores concentram os principais hubs da rede, indicando maior robustez estrutural.
 
 #### Requisito 03
 - Visualização por **comunidades**
