@@ -431,7 +431,7 @@ Essas heurísticas reduzem significativamente o tempo de execução e o número 
 
 #### 💡 Como Executar o Projeto
 
-As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `T3` e executar as células em ordem.
+As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `t3` e executar as células em ordem.
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
