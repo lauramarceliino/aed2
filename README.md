@@ -383,6 +383,10 @@ Essas métricas permitem identificar:
 - Regiões densamente conectadas
 - Estrutura hierárquica da rede
 
+A seguir estarão disponíveis imagens das métricas que foram calculadas usando o Gephi:
+![Métrica Gephil](u2/d2/imagens/Natal.png)
+
+
 #
 
 ### 🧩 Detecção de Comunidades
