@@ -435,7 +435,7 @@ As células já estão executadas mas caso seja necessário reproduzi-las, basta
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HNMRRcxwLa9ATS3X9C-j8s8U85B0VFQz?usp=sharing)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pwNhR_Y-SQUDJvp_nqxfFB32bEePyDeD?usp=sharing)
 
 Importando o HTML do gephi o deploy foi feito no github e está pode ser acessado clicando aqui 👉   [![Webpage – Open here](https://img.shields.io/badge/webpage-open%20here-green)]([https://ivanovitchm.github.io/netdeploy/network](https://lauramarceliino.github.io/deployprojeto/network))
 
