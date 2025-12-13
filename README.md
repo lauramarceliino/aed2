@@ -299,7 +299,7 @@ Em contraste, cidades conhecidas pela expansão urbana (urban sprawl), como Los 
 
 #### 💡 Como Executar o Projeto
 
-As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `t3` e executar as células em ordem.
+As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `T2U2` e executar as células em ordem.
 
 Você também pode vizualizar este projeto diretamente no Google Colab:  
 
@@ -314,3 +314,140 @@ O projeto também conta com um vídeo explicativo mostrando:
 - Deploy da rede
 
 [![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/p_VG5x17LWs)
+
+---
+
+## 🚀 Projeto referente a terceira unidade
+
+### 📊 Análise de Redes Complexas da Wikipedia
+
+### 👩‍💻 Autora
+Laura Marcelino
+
+
+### 🎯 Objetivo
+Este projeto tem como objetivo analisar uma **rede de estruturas complexas** construída a partir de links da **Wikipedia**, utilizando **bibliotecas em Python** e o software **Gephi**.  
+A análise é baseada em **métricas de centralidade**, **estrutura de núcleos (k-core / k-shell)** e **detecção de comunidades**, conforme os conteúdos estudados nas **Semanas 10 e 11 do curso**.
+
+A rede foi construída a partir de múltiplas páginas iniciais (*seeds*), explorando os links internos da Wikipedia até o **nível 2 (altura < 3)**.
+
+#
+
+### 🗂 Base de Dados
+A base de dados utilizada é uma **rede de links da Wikipedia**, construída dinamicamente por meio da biblioteca `wikipedia` em Python.
+
+#### Seeds utilizadas:
+- **Complex network**
+- **Artificial intelligence**
+- **Brazil**
+- **Quantum mechanics**
+- **Vincent van Gogh**
+
+As redes geradas a partir dessas seeds são **fundidas em um único grafo direcionado**, formando uma estrutura complexa heterogênea.
+
+#
+
+### ⚙️ Metodologia
+
+#### 🔹 Construção da Rede
+- Grafo modelado como **direcionado** (`DiGraph`)
+- Estratégia de busca **BFS (Breadth-First Search)**
+- Profundidade máxima: **nível 2**
+- Heurística para controle de crescimento:
+  - Limitação do número de links explorados por página
+- Uso de **cache local** para evitar requisições repetidas à Wikipedia
+- Tratamento de páginas ambíguas (*DisambiguationError*)
+
+#### 🔹 Limpeza e Pré-processamento
+- Remoção de *self-loops*
+- Remoção de páginas de identificadores (DOI, ISBN, ISSN, etc.)
+- Normalização de títulos
+- Remoção opcional de nós com grau muito baixo
+- Tratamento de atributos incompatíveis com o formato GraphML
+
+#
+
+### 📊 Métricas de Rede
+As seguintes métricas foram calculadas e adicionadas como atributos dos vértices:
+
+- **Degree (Grau)**
+- **Betweenness Centrality**
+- **Closeness Centrality**
+- **PageRank**
+- **Eigenvector Centrality**
+- **k-core / k-shell**
+
+Essas métricas permitem identificar:
+- Nós mais influentes
+- Nós intermediários importantes
+- Regiões densamente conectadas
+- Estrutura hierárquica da rede
+
+#
+
+### 🧩 Detecção de Comunidades
+A rede pode ser analisada no **Gephi** utilizando algoritmos de detecção de comunidades, como o **Modularity**.
+
+Após a limpeza dos identificadores, surgem comunidades temáticas coerentes, tais como:
+- Ciência e Inteligência Artificial
+- Física e Mecânica Quântica
+- Arte e História
+- Geopolítica e Brasil
+
+#
+
+### 🎨 Visualização no Gephi
+
+#### Requisito 01
+- Tamanho dos vértices proporcional ao **grau**
+- Cores associadas a métricas de centralidade  
+  (Closeness, Betweenness ou Eigenvector)
+- Layouts sugeridos:
+  - **ForceAtlas2**
+    
+#### Requisito 02
+- Destaque para **k-core / k-shell**
+- Vértices com tamanho proporcional ao grau
+- Visualização da estrutura interna da rede
+
+#### Requisito 03
+- Visualização por **comunidades**
+- Cores associadas às comunidades detectadas
+- Tamanho do vértice definido por uma métrica de livre escolha  
+
+#
+
+#### 🚀 Heurística e Otimização (Requisito 04)
+A exploração da Wikipedia até o nível 2 gera elevada demanda computacional.  
+Para tornar o processo viável, foram aplicadas as seguintes estratégias:
+
+- Limitação do número de links por página
+- Cache local em arquivos JSON
+- Uso de estruturas de dados eficientes (`set`, `list`, `dict`)
+- Pausas entre requisições para evitar sobrecarga da API
+
+Essas heurísticas reduzem significativamente o tempo de execução e o número de requisições.
+
+
+#### 💡 Como Executar o Projeto
+
+As células já estão executadas mas caso seja necessário reproduzi-las, basta baixar o notebook `T3` e executar as células em ordem.
+
+Você também pode vizualizar este projeto diretamente no Google Colab:  
+
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HNMRRcxwLa9ATS3X9C-j8s8U85B0VFQz?usp=sharing)
+
+Importando o HTML do gephi o deploy foi feito no github e está pode ser acessado clicando aqui 👉   [![Webpage – Open here](https://img.shields.io/badge/webpage-open%20here-green)]([https://ivanovitchm.github.io/netdeploy/network](https://lauramarceliino.github.io/deployprojeto/network))
+
+#
+
+#### 🎥 Apresentação / Vídeo
+
+O projeto também conta com um vídeo explicativo mostrando:  
+
+- Execução dos notebooks
+- Comparação entre Cidades
+- Tabela Comparativa e Análise  
+
+[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/p_VG5x17LWs)
+
