@@ -483,7 +483,9 @@ Após a limpeza dos identificadores, surgem comunidades temáticas coerentes, ta
  
 ![Métrica Gephil](u3/imagens/requisito1.png)
  
-O layout ForceAtlas2 foi utilizado por permitir uma visualização clara da separação estrutural da rede. O tamanho dos vértices é proporcional ao grau, refletindo o número de conexões, enquanto as cores representam a centralidade de betweenness, evidenciando nós com papel de intermediação entre comunidades. Nós com maior betweenness aparecem em tons mais quentes, indicando maior importância como intermediários entre comunidades.
+O layout ForceAtlas2 foi utilizado por permitir uma visualização clara da separação estrutural da rede. O tamanho dos vértices é proporcional ao grau, refletindo o número de conexões, enquanto as cores representam a centralidade de betweenness, evidenciando nós com papel de intermediação entre comunidades. Nós com maior betweenness aparecem em tons mais quentes, indicando maior importância como intermediários entre comunidades. Após adição de filtro, labels e melhor organização a rede ficou assim:
+
+![Métrica Gephil](u3/imagens/requisito1-1.png)
     
 #### Requisito 02
 - Destaque para **k-core / k-shell**
