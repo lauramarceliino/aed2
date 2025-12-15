@@ -543,5 +543,5 @@ O projeto também conta com um vídeo explicativo mostrando:
 - Comparação entre Cidades
 - Tabela Comparativa e Análise  
 
-[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/p_VG5x17LWs)
+[![Assista no YouTube](https://img.shields.io/badge/YouTube-Assistir-red?logo=youtube)](https://youtu.be/Y-0pExE0QZc)
 
